@@ -5,10 +5,15 @@ import Data from './data.json';
 
 function App(){
 
-    let items = [];
-    for(let i=0; i<Data.length; i++){
-      items.push(<Card title={Data[i].title} desc={Data[i].desc} />);
-    }
+    let items;
+    // for(let i=0; i<Data.length; i++){
+    //   items.push(<Card title={Data[i].title} desc={Data[i].desc} />);
+    // }
+    
+    items = Data.map((item) =>
+      <Card title={item.title} desc={item.desc} />
+    )
+
     return <>
         <h1 className='headingStyle'>Hello World!!! </h1>
 
