@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Card from './components/Card.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+    return <>
+        <h1 className='headingStyle'>Hello World!!! </h1>
+        <Card title = "Solve 2 problems from CF" desc="solve this without any expternal help." />
+        <Card title = "Push come code to GITHUB" desc="write some everyday and push them to GITHUB." />
+    </>
 }
 
 export default App;
