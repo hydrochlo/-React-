@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Card from './components/Card/Card.js';
 import Data from './data.json';
 import List from './components/UniqueList/List.js';
+import NestedList from './components/NestedList/NestedList.js';
 
 function App(){
 
@@ -20,7 +21,7 @@ function App(){
     // </>
 
     return <>
-        <List />
+        <NestedList />
     </>
 
 }
